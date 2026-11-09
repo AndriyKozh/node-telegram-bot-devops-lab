@@ -1,0 +1,16 @@
+{
+  "name": "node-telegram-bot-devops-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Telegram bot on native Node.js for hands-on Makefile and Dockerfile training",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --env-file=.env src/index.js",
+    "check": "node --check src/index.js && node --check src/telegram.js && node --check src/commands.js",
+    "test": "node --test"
+  }
+}
